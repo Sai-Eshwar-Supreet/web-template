@@ -1,1 +1,1 @@
-console.log("Webpack initialized");
+console.log('Webpack initialized');
