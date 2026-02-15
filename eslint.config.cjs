@@ -5,10 +5,14 @@ const globals = require('globals');
 module.exports = [
   js.configs.recommended,
   {
-    files: ['./src/**/*.js'],
     languageOptions: {
       ecmaVersion: 'latest',
-      sourceType: 'module',
+      sourceType: 'module'
+    },
+  },
+  {
+    files: ['./src/**/*.js'],
+    languageOptions: {
       globals: {
         ...globals.browser,
       },
@@ -18,9 +22,8 @@ module.exports = [
     },
   },
   {
-    files: ['*.config.js', '*.config.js', 'webpack.*.cjs'],
+    files: ['*.config.js', '*.config.cjs', 'webpack.*.cjs'],
     languageOptions: {
-      ecmaVersion: 'latest',
       sourceType: 'script',
       globals: {
         ...globals.node,
