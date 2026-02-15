@@ -22,6 +22,14 @@ module.exports = [
     },
   },
   {
+    files: ['**/*.test.js'],
+    languageOptions: {
+        globals: {
+            ...globals.jest
+        }
+    }
+  },
+  {
     files: ['*.config.js', '*.config.cjs', 'webpack.*.cjs'],
     languageOptions: {
       sourceType: 'script',
